@@ -1,2 +1,4 @@
-# first_package
-Just display a message
+Site Package for the project "First Package"
+==============================================================
+
+Add some explanation here.
