@@ -1,0 +1,33 @@
+tt_content.raster_main = FLUIDTEMPLATE
+tt_content.raster_main {
+    templateName = RasterMain 
+    templateRootPaths {
+        0 = EXT:first_package/Ressources/Private/Templates/
+    }
+}
+
+tt_content.raster_2col = FLUIDTEMPLATE
+tt_content.raster_2col {
+    templateName = raster_2col
+    templateRootPaths.0 = EXT:first_package/Ressources/Private/Templates/
+
+    dataProcessing {
+        #linke Spalte
+        10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        10 {
+            table = tt_content
+            where = colPos = 101 AND tx_firstpackage_parent = ###uid###
+            markers.uid.field = uid
+            as = columnleft
+        }
+
+        #rechte Spalte
+        20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        20 {
+            table = tt_content
+            where = colPos = 102 AND tx_firstpackage_parent = ###uid###
+            markers.uid.field = uid
+            as = columnright
+        }
+    }
+}

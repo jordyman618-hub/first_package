@@ -1,0 +1,15 @@
+<div class ="row">
+    <div class="col-md-6">
+        <!--linke Spalte-->
+        <f:for each="{columnleft}" as = "child">
+            <f:cObject typoscriptObjectPath = "tt_content" data = "{child.data}" />
+        </f:for>
+    </div>
+
+    <div class="col-md-6">
+        <!--rechte Spalte-->
+        <f:for each="{columnright}" as = "child">
+            <f:cObject typoscriptObjectPath = "tt_content" data = "{child.data}" />
+        </f:for>
+    </div>
+</div>
