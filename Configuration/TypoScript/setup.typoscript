@@ -4,6 +4,13 @@ tt_content.raster_main {
     templateRootPaths {
         0 = EXT:first_package/Resources/Private/Templates/
     }
+
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        10{
+            table = tt_content
+        }
+    }
 }
 
 tt_content.raster_2col = FLUIDTEMPLATE
