@@ -39,3 +39,8 @@ tt_content.raster_2col {
         }
     }
 }
+plugin.tx_firstpackage {
+    view {
+        templateRootPaths.0 = EXT:first_package/Resources/Private/Templates/
+    }
+}
