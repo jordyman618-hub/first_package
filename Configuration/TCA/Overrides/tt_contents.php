@@ -1,5 +1,5 @@
 <?php
-define('Typo3') or die();
+define('TYPO3') or die();
 
 $relativeAssetPath = 'first_package';
 
