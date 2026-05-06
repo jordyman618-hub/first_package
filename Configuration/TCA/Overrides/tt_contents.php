@@ -1,11 +1,11 @@
 <?php
-define('TYPO3') or die();
+defined('TYPO3') or die();
 
 $relativeAssetPath = 'first_package';
 
 //Typ des Contents
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
-    'tt-content',
+    'tt_content',
     'CType',
     [
         'Raster',
@@ -17,13 +17,13 @@ $relativeAssetPath = 'first_package';
 );
 
 //Felder werden angezeigt
-$GLOBALS['TCA']['tt_content']['types']['raster-main'] = [
+$GLOBALS['TCA']['tt_content']['types']['raster_main'] = [
     'showitem' => '
-    --div--;LLL:EXT:core/Ressources/Private/Language/locallang_tca.xlf:be_groups_tab_common,--pallette--;;
+    --div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:be_groups_tab_common,--pallette--;;
     general,
     header,
     bodytext; RasterText;t3editor,
-    --div--;LLL:EXT:core/Ressources/Private/Language/locallang_tca.xlf:be_groups_tab_access,
+    --div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:be_groups_tab_access,
     hidden,
     starttime,
     endtime

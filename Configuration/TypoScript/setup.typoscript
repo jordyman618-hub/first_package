@@ -2,14 +2,14 @@ tt_content.raster_main = FLUIDTEMPLATE
 tt_content.raster_main {
     templateName = RasterMain 
     templateRootPaths {
-        0 = EXT:first_package/Ressources/Private/Templates/
+        0 = EXT:first_package/Resources/Private/Templates/
     }
 }
 
 tt_content.raster_2col = FLUIDTEMPLATE
 tt_content.raster_2col {
     templateName = raster_2col
-    templateRootPaths.0 = EXT:first_package/Ressources/Private/Templates/
+    templateRootPaths.0 = EXT:first_package/Resources/Private/Templates/
 
     dataProcessing {
         #linke Spalte
