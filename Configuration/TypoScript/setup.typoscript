@@ -1,8 +1,9 @@
+config.contentObjectExceptionHandler = 0
 tt_content.raster_main = FLUIDTEMPLATE
 tt_content.raster_main {
-    templateName = RasterMain 
+    templateName = RasterMian 
     templateRootPaths {
-        0 = EXT:first_package/Resources/Private/Templates/
+        10 = EXT:first_package/Resources/Private/Templates/
     }
 
     dataProcessing {
@@ -15,7 +16,7 @@ tt_content.raster_main {
 
 tt_content.raster_2col = FLUIDTEMPLATE
 tt_content.raster_2col {
-    templateName = raster_2col
+    templateName = Raster2Col
     templateRootPaths.0 = EXT:first_package/Resources/Private/Templates/
 
     dataProcessing {
