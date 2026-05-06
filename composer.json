@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "None\\FirstPackage\\": "Classes/"
+            "Vendor\\FirstPackage\\": "Classes/"
         }
     },
     "extra": {
